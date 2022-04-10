@@ -1,0 +1,42 @@
+{
+    "git.ignoreMissingGitWarning": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.indent": 16,
+    "bracketPairColorizer.depreciation-notice": false,
+    "editor.tabCompletion": "on",
+    "workbench.colorTheme": "Darcula",
+    "emmet.triggerExpansionOnTab": true,
+    // "files.associations": { "*.blade.php" : "html" },
+    "editor.suggest.insertMode": "replace",
+    "vscodeGoogleTranslate.preferredLanguage": "English",
+    "multiCommand.commands": [
+        {
+          "command": "multiCommand.ddBefore", 
+          "sequence": [
+            "editor.action.clipboardCopyAction",
+            "editor.action.insertLineBefore",
+            {
+              "command": "editor.action.insertSnippet",
+              "args": {
+                "langId": "php",
+                "name": "dd"
+              }
+            },
+          ]
+        },
+        {
+            "command": "multiCommand.ddAfter", 
+            "sequence": [
+              "editor.action.clipboardCopyAction",
+              "editor.action.insertLineAfter",
+              {
+                "command": "editor.action.insertSnippet",
+                "args": {
+                  "langId": "php",
+                  "name": "dd"
+                }
+              },
+            ]
+          }
+    ]
+}

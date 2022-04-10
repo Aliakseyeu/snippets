@@ -1,0 +1,59 @@
+{
+	"Livewire": {
+		"prefix": "lv",
+		"body": [
+			"<livewire:$1 />"
+		],
+		"description": "Livewire"
+	},
+	"Nested Livewire": {
+		"prefix": "lvn",
+		"body": [
+			"<livewire:$1 :key=\"'$2'.\" />"
+		],
+		"description": "Nested Livewire"
+	},
+	"Livewire Reusable": {
+		"prefix": "lvr",
+		"body": [
+			"<livewire:${1|create,update,delete|} class=\"\\App\\Models\\\\$2\"",
+			"	:row=\"$3\"",
+			"	:fields=\"[$4]\"",
+			"	:rules=\"$5\"",
+			"	:key=\"'$6-'.$7\"", 
+			"/>"
+		],
+		"description": "Livewire Reusable"
+	},
+	"wire:submit": {
+		"prefix": "ws",
+		"body": [
+			"wire:submit.prevent=\"$1\""
+		],
+		"description": "wire:submit"
+	},
+	"wire:click": {
+		"prefix": "wc",
+		"body": [
+			"wire:click.prevent=\"$1\""
+		],
+		"description": "wire:click"
+	},
+	"wire:model": {
+		"prefix": "wm",
+		"body": [
+			"wire:model.delay.99999s=\"$1\""
+		],
+		"description": "wire:model"
+	},
+
+	"wrap @if": {
+		"prefix": "@wif",
+		"body": [
+			"@if($1)",
+			"    $CLIPBOARD",
+			"@endif"
+		],
+		"description": "wrap @if"
+	},
+}

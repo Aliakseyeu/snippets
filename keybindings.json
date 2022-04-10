@@ -1,0 +1,70 @@
+// Place your key bindings in this file to override the defaultsauto[]  
+[
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.continue",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.start",
+        "when": "debuggersAvailable && debugState == 'inactive'"
+    },
+    {
+        "key": "f6",
+        "command": "-workbench.action.debug.pause",
+        "when": "debugState == 'running'"
+    },
+    {
+        "key": "f6",
+        "command": "-workbench.action.focusNextPart"
+    },
+    {
+        "key": "f5",
+        "command": "namespaceResolver.import",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "-namespaceResolver.import",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "f6",
+        "command": "namespaceResolver.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+e",
+        "command": "-namespaceResolver.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t ctrl+t",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+          "langId": "php",
+          "name": "this"
+        }
+    },
+    {
+        "key": "ctrl+t ctrl+v",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+          "langId": "php",
+          "name": "$this->var"
+        }
+    },
+    {
+        "key": "ctrl+shift+d ctrl+shift+b",
+        "command": "extension.multiCommand.execute",
+        "args": { "command": "multiCommand.ddBefore" }
+    },
+    {
+        "key": "ctrl+shift+d ctrl+shift+a",
+        "command": "extension.multiCommand.execute",
+        "args": { "command": "multiCommand.ddAfter" }
+    },
+]

@@ -1,0 +1,121 @@
+{
+	// Place your snippets for php here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"this": {
+		"prefix": "t",
+		"body": [
+			"\\$this->"
+		],
+		"description": "this"
+	},
+
+	"dd": {
+		"prefix": "dd",
+		"body": [
+			"dd(${1:$CLIPBOARD});"
+		],
+		"description": "dd"
+	},
+
+	"pub, pro, pri": {
+		"prefix": "p",
+		"body": [
+			"${1|public,protected,private|}"
+		],
+		"description": "pub, pro, pri"
+	},
+
+	"function": {
+		"prefix": "f",
+		"body": [
+			"function $1 ($2): ${3:void}",
+			"{",
+			"    $4",
+			"}"
+		],
+		"description": "function"
+	},
+
+	"return": {
+		"prefix": "r",
+		"body": [
+			"return "
+		],
+		"description": "return"
+	},
+
+	"findOrFail": {
+		"prefix": "ff",
+		"body": [
+			"findOrFail($1)"
+		],
+		"description": "findOrFail"
+	},
+
+	"$this->var": {
+		"prefix": "tv",
+		"body": [
+			"\\$this->${1:$CLIPBOARD} = $$1;"
+		],
+		"description": "$this->var"
+	},
+
+	"return true": {
+		"prefix": "rt",
+		"body": [
+			"return true;"
+		],
+		"description": "return true"
+	},
+
+	"return false": {
+		"prefix": "rf",
+		"body": [
+			"return false;"
+		],
+		"description": "return false"
+	},
+
+	"wrap if": {
+		"prefix": "wif",
+		"body": [
+			"if($1){",
+			"	$CLIPBOARD",
+			"}"
+		],
+		"description": "wrap if"
+	},
+
+	"wrap if condition": {
+		"prefix": "wic",
+		"body": [
+			"if(${CLIPBOARD/[\\;]//g}){",
+			"	$1",
+			"}"
+		],
+		"description": "wrap if condition"
+	},
+
+	"p... function": {
+		"prefix": "pf",
+		"body": [
+			"${1|public,protected,private|} function $2($3): ${4:void}",
+			"{",
+			"    $5",
+			"}"
+		],
+		"description": "p... function"
+	},
+}
